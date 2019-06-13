@@ -2,9 +2,9 @@ from rest_framework import viewsets, mixins
 from rest_framework.authentication import TokenAuthentication
 from rest_framework.permissions import IsAuthenticated
 
-from app.core.models import Tag
+from core.models import Tag
 
-from app.recipe import serializers
+from recipe import serializers
 
 
 class TagViewSet(viewsets.GenericViewSet, mixins.ListModelMixin):
